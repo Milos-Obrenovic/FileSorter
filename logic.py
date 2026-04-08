@@ -2,11 +2,11 @@ from json import load
 import os
 
 def sort_files_by_extension():
-    # Get the user's home directory and the Downloads folder path
+    # ~/Downloads
     home = os.path.expanduser("~")
     downloads = os.path.join(home, "Downloads")
 
-    # Load the configuration from the JSON file
+    # Load config
     with open("config.json", "r") as f:
         temp_config = load(f)
 

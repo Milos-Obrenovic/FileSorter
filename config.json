@@ -27,7 +27,6 @@
     "Documents/Archives": [
         ".zip",
         ".tar",
-        ".tar.gz",
         ".rar",
         ".7z",
         ".torrent"
