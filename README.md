@@ -11,9 +11,11 @@ FileSorter, as the name suggests sorts files (from the `Download` folder) into f
 
 in `config.json`, write something like ***example***
 ```json
-"FolderName/Path/If/Needed"[
-    ".ext"
-]
+{
+   "FolderName/Path/If/Needed"[
+      ".ext"
+   ]
+}
 ```
 
 ## Warning
