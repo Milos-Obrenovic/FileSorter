@@ -5,9 +5,10 @@ def sort_files_by_extension():
     # ~/Downloads
     home = os.path.expanduser("~")
     downloads = os.path.join(home, "Downloads")
+    config_path = os.path.join(os.path.dirname(__file__), "config.json")
 
     # Load config
-    with open("config.json", "r") as f:
+    with open(config_path, "r") as f:
         temp_config = load(f)
 
     config = {}
