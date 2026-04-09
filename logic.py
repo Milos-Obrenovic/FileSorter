@@ -1,5 +1,6 @@
 from json import load
 import os
+import shutil
 
 def sort_files_by_extension():
     # ~/Downloads
@@ -25,7 +26,15 @@ def sort_files_by_extension():
 
             source = os.path.join(downloads, filename)
             target = os.path.join(target_folder, filename)
-            os.rename(source, target)
+            
+            if os.path.exists(target):
+                base, ext = os.path.splitext(filename)
+                counter = 1
+                while os.path.exists(target):
+                    target = os.path.join(target_folder, f"{base}_{counter}{ext}")
+                    counter += 1
+            
+            shutil.move(source, target)
         else:
             print(f"Extension '{ext}' not found in config, skipping '{filename}'.")
 
