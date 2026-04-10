@@ -29,6 +29,10 @@
         ".tar",
         ".rar",
         ".7z",
-        ".torrent"
+        ".torrent",
+        ".iso",
+        ".vdi",
+        ".qcow2",
+        ".vmdk"
     ]
 }
