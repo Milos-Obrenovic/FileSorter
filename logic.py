@@ -20,6 +20,11 @@ def sort_files_by_extension():
     # Read the Downloads folder and sort
     for filename in os.listdir(downloads):
         ext = os.path.splitext(filename)[1].lower()
+
+        # Files not folders, people!
+        if ext == "": 
+            continue
+
         if ext in config:
             target_folder = os.path.join(home, config[ext])
             os.makedirs(target_folder, exist_ok=True)
