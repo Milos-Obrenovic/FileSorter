@@ -1,4 +1,4 @@
-from json import load
+import json
 import os
 import shutil
 
@@ -10,7 +10,7 @@ def sort_files_by_extension():
 
     # Load config
     with open(config_path, "r") as f:
-        temp_config = load(f)
+        temp_config = json.load(f)
 
     config = {}
     for category, extensions in temp_config.items():

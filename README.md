@@ -13,7 +13,7 @@ in `config.json`, write something like ***example***
 ```json
 {
    "FolderName/Path/If/Needed"[
-      ".ext"
+      "file.ext"
    ]
 }
 ```
