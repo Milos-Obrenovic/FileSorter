@@ -17,10 +17,3 @@ in `config.json`, write something like ***example***
    ]
 }
 ```
-
-## Warning
-
-### this project was only tested on **Fedora Linux**.
-
-Windows support untested,
-pull requests are welcome.
